@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(160,158,185);
+background: linear-gradient(90deg, rgba(160,158,185,1) 7%, rgba(121,22,9,1) 41%, rgba(78,9,121,1) 100%);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.container1{
+    background-color: #791609;
+    width: 40vw;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+h1{
+    color: white;
+}
+.input{
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    gap: 5px;
+    background-color: rgb(230, 230, 240);
+}
+#taskinput{
+    height: 30px;
+    width: 100%;
+    padding: 5px 5px 5px 5px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: red;
+}
+#taskbutton{
+    background-color: greenyellow;
+    color: white;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+#tasklist{
+  color: white;
+  font-size: larger;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+li span{
+    color: white;
+    font-size: 30px;
+    /* text-decoration: line-through; */
+}
+li button{
+    background-color: greenyellow;
+    color: white;
+    width: 50px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 3px 3px 3px 3px;
+
+}
+li div{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 5px;
+}
+/* Media query for small devices (phones) */
+@media screen and (max-width: 600px) {
+    .container1 {
+        width: 80vw;
+        gap: 15px;
+    }
+    
+    #taskinput {
+        font-size: 12px;
+        height: 25px;
+    }
+    
+    #taskbutton {
+        width: 80px;
+        height: 25px;
+        font-size: 12px;
+    }
+    
+    li span {
+        font-size: 20px;
+    }
+    
+    li button {
+        width: 40px;
+        font-size: 12px;
+    }
+    
+    #tasklist {
+        width: 70%;
+    }
+}
+
+/* Media query for medium-sized devices (tablets) */
+@media screen and (min-width: 601px) and (max-width: 992px) {
+    .container1 {
+        width: 60vw;
+        gap: 18px;
+    }
+    
+    #taskinput {
+        font-size: 14px;
+        height: 28px;
+    }
+    
+    #taskbutton {
+        width: 90px;
+        height: 28px;
+        font-size: 14px;
+    }
+    
+    li span {
+        font-size: 25px;
+    }
+    
+    li button {
+        width: 45px;
+        font-size: 14px;
+    }
+    
+    #tasklist {
+        width: 60%;
+    }
+}
